@@ -318,6 +318,7 @@ function App() {
         </div>
       </section>
 
+
       {/* Cocktail Detail Modal */}
       {selectedCocktail && (
         
@@ -327,7 +328,7 @@ function App() {
             <button
               onClick={() => setSelectedCocktail(null)}
               className="text-white hover:text-amber-400 
-                         bg-black/70 px-6 py-3 rounded-full text-2xl font-bold 
+                         bg-black/70 px-4 py-2 md:px-6 md:py-3 rounded-full text-lg md:text-2xl font-bold 
                          transition-colors shadow-lg backdrop-blur-md"
             >
               ← Retour
