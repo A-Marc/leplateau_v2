@@ -322,13 +322,19 @@ function App() {
       {selectedCocktail && (
         
         <div className="fixed inset-0 z-50 bg-black/90 backdrop-blur-lg overflow-y-auto">
-    <button
-      onClick={() => setSelectedCocktail(null)}
-      className="sticky top-6 right-6 float-right text-white hover:text-amber-400 bg-black/70 px-6 py-3 rounded-full text-2xl font-bold transition-colors shadow-lg"
-    >
-      ← Retour
-    </button>
-          <div className="min-h-screen">
+          {/* Sticky Back Button */}
+          <div className="sticky top-6 right-6 z-50 flex justify-end p-6">
+            <button
+              onClick={() => setSelectedCocktail(null)}
+              className="text-white hover:text-amber-400 
+                         bg-black/70 px-6 py-3 rounded-full text-2xl font-bold 
+                         transition-colors shadow-lg backdrop-blur-md"
+            >
+              ← Retour
+            </button>
+          </div>
+          
+          <div className="min-h-screen -mt-24">
             {/* Movie Header */}
             <div className="relative h-96 overflow-hidden">
               <img
@@ -337,6 +343,16 @@ function App() {
                 className="w-full h-full object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/60 to-black" />
+
+
+                <button
+    onClick={() => setSelectedCocktail(null)}
+    className="sticky top-6 right-6 float-right z-50 text-white hover:text-amber-400 
+               bg-black/70 px-6 py-3 rounded-full text-2xl font-bold 
+               transition-colors shadow-lg"
+  >
+    ← Retour
+  </button>
               
 
 
